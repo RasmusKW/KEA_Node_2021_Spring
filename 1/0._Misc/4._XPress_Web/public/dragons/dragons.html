@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/dragons.css" type="text/css">
+    <title>Dragons</title>
+</head>
+<body>
+    <h1>Dragons</h1>
+    <p class="pantheon">Pantheon is a dragon</p>
+    <a href="/">Go back to Welcome Page</a>
+    <div id="grid-container">
+        <div id="1">1</div>
+        <div id="2">2</div>
+        <div id="3">3</div>
+        <div id="4">4</div>
+        <div id="5">5</div>
+        <div id="6">6</div>
+        <div id="7">7</div>
+        <div id="8">8</div>
+        <div id="9">9</div>
+     
+    </div>
+  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="scripts/dragons.js" type="text/javascript"></script>
+    <script>
+        const dragonImage = `<img id="dragon-img" src="https://cdn.pixabay.com/photo/2014/01/05/01/19/dragon-238931_1280.jpg">`;
+        $("#1").append(dragonImage);
+        $(document).on("click", (event) => {
+        $("#1 #dragon-img").remove();
+    })
+    </script>
+    
+    <script>
+    red = true
+
+    setInterval(() => {
+
+        if (red) {
+
+            $("body").css("background-color", "white") 
+
+        } else {
+
+            $("body").css("background-color", "red")
+
+        }
+
+        red = !red
+
+    }, 5000)
+ </script>
+
+
+
+</body>
+</html>

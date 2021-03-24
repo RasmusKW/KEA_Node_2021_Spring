@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.1/styles/tomorrow-night-bright.min.css">
+     <link rel="stylesheet" href="styles/theory.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.1/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <title>Theory</title>
+</head>
+<body>
+    <div class="indexjumbotron">
+        <div class="movedown">
+            <div class="container">
+              
+              <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-item nav-link" href="/">Home</a>
+                        <a class="nav-item nav-link" href="/terminal">Terminal Commands</a>
+                        <a class="nav-item nav-link" href="/tools">Tools</a>
+                        <a class="nav-item nav-link active" href="/theory">Theory</a>
+                    </div>
+                </div>
+            </nav>
+            
+    
+    
+                <div class="jumbotron">
+                    <h3>Theory</h3>
+                    <div class="accordion" id="accordionExample">
+                        <div class="card">
+                          <div class="card-header" id="headingOne">
+                            <h2 class="mb-0">
+                              <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                HTTP Requests
+                              </button>
+                            </h2>
+                          </div>
+                         
+                          <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <table class="table">
+                                    <thead>
+                                      <tr>
+                                        <th scope="col">Method</th>
+                                        <th scope="col">Action</th>
+                                            
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <th scope="row">GET</th>
+                                        <td>The GET method is used to request data from a specified resource.</td>
+                                       
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">POST</th>
+                                        <td>The POST method is used to submit data to usually update or create a resource.</td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">DELETE</th>
+                                        <td>The Delete method deletes the specified resource.</td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">PUT</th>
+                                        <td>The PUT method is used to replace all current representations of a specified resource with the request payload.</td>
+                                      </tr>
+                                      <tr>
+                                    </tbody>
+                                  </table>
+                       
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="card">
+                          <div class="card-header" id="headingTwo">
+                            <h2 class="mb-0">
+                              <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                REST APIs
+                              </button>
+                            </h2>
+                          </div>
+                          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                            <div class="card-body">
+                              <p style="font-weight: bold">API</p> API stands for Application Programming Interface. It contains a defined set of rules which allows program to talk to each other.
+                              <br>
+                              The API is created on the server side and allows clients to talk to it.
+                              <br>
+                              <br>
+                              <p style="font-weight: bold">REST</p>REST stands for Representational State Transfer and is a software architectural style. It contains guidelines/rules that developers follow to create their API,
+                              so REST determines how APIs look. For a web service to be RESTful, it has to follow these guidelines. 
+                              <br><br>
+                              RESTful APIs main practices comes down to four essential operations:
+                              <br><br>
+                              <ul>
+                                  <li>Receiving data in a covenient format.</li>
+                                  <li>Creating new data.</li>
+                                  <li>Updating data.</li>
+                                  <li>Deleting data.</li>
+                              </ul>
+                                                          <br>
+                              A good rule to talk about is the one that states that you should be able to get a piece of data (resouce), when you link to a specific URL.
+                              <br>
+                              These URLs are called a <b>Request</b> and the data send back is called a <b>Response</b>. 
+                              <br>
+                              The methods used to do these Request and Responses comes from HTTP which REST heavily relies on, see the HTTP Requests section for more info about each methods action.
+                              These methods are generally called CRUD (Create, Read, Update, Delete).
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="card">
+                          <div class="card-header" id="headingThree">
+                            <h2 class="mb-0">
+                              <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Callback Functions
+                              </button>
+                            </h2>
+                          </div>
+                          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                            <div class="card-body">
+                              <p style="font-weight: bold">Callback Functions</p>
+                              A callback funtion is a function passed as an arguement to another function.
+                              <br>
+                              The smart thing about callback functions are that they help us deal with asynchronous programming.
+                              It does this by making sure that a function is not going to run before a task is completed but will run right after.
+                              <br><br>
+                              
+                              This next section will provide information about JavaScript Function Sequence and show relevant code snippets.
+                              <br>
+                              The function sequence in JavaScript are executed in the sequence they are called and not in the sequence they are defined. 
+                              <br><br>
+                             
+                              For example (Example provided by <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_callback1" target="_blank">w3schools</a>)
+                              <pre><code>
+                                &lt;p id="demo"&gt; &lt;/p&gt;
+
+                                function myDisplayer(some) {
+                                  document.getElementById("demo").innerHTML = some;
+                                }
+                                
+                                function myFirst() {
+                                  myDisplayer("Hello");
+                                }
+                                
+                                function mySecond() {
+                                  myDisplayer("Goodbye");
+                                }
+                                
+                                myFirst();
+                                mySecond();
+                              </code></pre>
+                              
+                              This code will only end up displaying "Goodbye" and we therefore need a way to control our function sequence.
+                              
+                              <br><br> 
+                              A way to do this could be by calling a function, save the result and then call another function to display the result of the function.
+                              
+                              <pre><code>
+                                &lt;p id="demo"&gt; &lt;/p&gt;
+
+                              function myDisplayer(some) {
+                                document.getElementById("demo").innerHTML = some;
+                              }
+                              
+                              function myMessageCompiler(txt1, txt2) {
+                                let msg = txt1 + txt2;
+                                return msg;
+                              }
+                              
+                              let result = myMessageCompiler("Hello ", "Goodbye")
+                              myDisplayer(result)
+                            </code></pre>
+
+                            This would give us the result "Hello Goodbye".
+                            The problem with this solution is that we are using 2 function to display the result. 
+
+                            <br><br> 
+                            Another way to do it would be by letting a function call another function and call only that 1 function. 
+                            
+                            <pre><code>
+                              &lt;p id="demo"&gt; &lt;/p&gt;
+
+                              function myDisplayer(some) {
+                                document.getElementById("demo").innerHTML = some;
+                              }
+                              
+                              function myMessageCompiler(txt1, txt2) {
+                                let msg = txt1 + txt2;
+                                myDisplayer(msg)
+                              }
+                              
+                              myMessageCompiler("Hello ", "Goodbye");
+                            </code></pre>
+
+                            This would also give us the result "Hello Goodbye".
+                            The problem with this solution is that there is no way to prevent the message compiler function from displaying the result. 
+                            <br>
+
+                            This is where callback functions come in handy.
+                            <br><br>
+
+                            A callback funtion is a function passed as an arguement to another function.
+                            Here is an example following the message compiler example from above.
+                            <pre><code>
+                              &lt;p id="demo"&gt; &lt;/p&gt;
+
+                              function myDisplayer(some) {
+                                document.getElementById("demo").innerHTML = some;
+                              }
+                              
+                              function myMessageCompiler(txt1, txt2, myCallback) {
+                                let msg = txt1 + txt2;
+                                myCallback(msg)
+                              }
+                              
+                              
+                              myMessageCompiler("Hello ", "Goodbye", myDisplayer);
+                            </code></pre>
+                            <br>
+
+                            Here is a more simple example
+                            <pre><code>
+                            function print(callback) {  
+                              callback();
+                            }
+                            </code></pre>
+                            <br>
+
+                            Here is a callback example using the built in setTimeout method.
+                            <pre><code>
+                              const log = function() {  
+                                console.log("This will be logged after 2 seconds");
+                              }
+                             
+                              setTimeout(log, 2000);
+                            </code></pre>
+
+                            Here the log function will be called after something happens (controlled by the setTimeout method), 
+                            but not prior to that, which means it is an example of a callback function.
+                            <br>
+
+                            Lastly an example using ES6 arrow function
+                            <pre><code>
+                              setTimeout(() => { 
+                                console.log("This will be logged after 2 seconds");
+                            }, 2000);
+                            </code></pre>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="card">
+                          <div class="card-header" id="headingFour">
+                            <h2 class="mb-0">
+                              <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                Loops
+                              </button>
+                            </h2>
+                          </div>
+                          <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                            <div class="card-body">
+                              <p style="font-weight: bold">A functional approach to Looping</p>
+                              Looping in JavaScript can be done by using functional approaches by using for example Map, Filter and Find.
+                              <br><br>
+
+                              <p style="font-weight: bold">Map</p>
+                              The map() method can be used to create a new array populated with the results provided by a function called on every element in the calling array.
+                              <br><br>
+
+                              Example
+                              <pre><code>
+                                const arr1 = [2,4,8,16]
+                                const map1 = arr1.map(x => x/2)
+                                console.log(map1);
+                              </code></pre>
+                              Here we first define an array arr1 and here after use the map method on the array with the function x/2.
+                              This then calls that function on all the elements in the array and provides us with a new array with the result [ 1, 2, 4, 8 ]
+                              <br><br>
+
+
+                              <p style="font-weight: bold">Filter</p>
+                              The filter() method creates a new array with all elements that pass the test implmented by the given function.
+                              <br><br>
+                              Example
+                              <pre><code>
+                              const arr1 = ['this', 'is', 'the', 'filter', 'method']
+                              const result = arr1.filter(arr1 => arr1.length > 3)
+                              console.log(result);
+                              </code></pre>
+                              Here we use the filter() method on the array which then tests for the length of each string element in the array to be larger than 3.
+                              With this we get the following result [ 'this', 'filter', 'method' ]
+
+                              <p style="font-weight: bold">Find</p>
+                              The find() method returns the value of the first element in the provided array which satisfies the provided testing function. 
+                              In the case that no values satisfy the testing function, undefined is returned.
+                              <br><br>
+                              Example
+                              <pre><code>
+                              const arr1 = [1,2,3,4];
+                              const found = arr1.find(x => x > 1);
+                              console.log(found);
+                              </code></pre>
+                              Here we use the find() method on the array which uses the test function x > 1, checking each element if it's larger than 1.
+                              <br>
+                              The first value in the array that is larger than 1 is 2 and the result we get is therefore the value 2.
+                              <br>
+                             </div>
+                          </div>
+                        </div>
+
+                        <div class="card">
+                          <div class="card-header" id="headingFive">
+                            <h2 class="mb-0">
+                              <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                Type Coercion
+                              </button>
+                            </h2>
+                          </div>
+                          <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+                            <div class="card-body">
+                              <p style="font-weight: bold">Type Coercion</p>
+                              Type coercion is the conversion of values from one data type to another (e.g. from number to string). 
+                              <br> The difference between type corecion and conversion,
+                              is that coercion is implicit and conversion can be implicit or explicit.
+                              
+                              <br><br>
+                              Example
+                              <pre><code>
+                                const v1 = 3;
+                                const v2 = '2';
+                                let result = v1+v2;
+                                console.log(result);
+                              </code></pre>
+                              With this example, JavaScript automatically coerced the value 3 from a number into a string and then concatenated the two strings together.
+                              <br>This gives us the result 32.
+                              <br><br>
+                              If we want the compiler to coerce the string '2' into a number, we would have to explicitly convert the '2' to a number using the Number() method like this example.
+                              <pre><code>
+                                const v1 = 3;
+                                const v2 = '2';
+                                let result = v1+Number(v2);
+                                console.log(result);
+                              </code></pre>
+                              This Would give us the result 5. 
+                             
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card">
+                          <div class="card-header" id="headingSix">
+                            <h2 class="mb-0">
+                              <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                Scopes and Strict Mode
+                              </button>
+                            </h2>
+                          </div>
+                          <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
+                            <div class="card-body">
+                              <p style="font-weight: bold">Scopes</p>
+                              In JavaScript the scope determines the accessibility (visibility) of variables.
+                              <br>
+                              Functions in JavaScript each creates a new scope. The varibles defined inisde the function are not accessible (visible)
+                              outside the function, which means that they are Local. Variables defined outside of functions are accessible (visible) everywhere
+                              and is thereby Global.
+                              <br><br>
+                              This describes the two types of scopes there are in JavaScript.
+                              <br>
+                              <ul>
+                                <br>
+                                <li>Local Scope</li>
+                                <br>
+                                <li>Global Scope</li>
+                              </ul>
+                              <br>
+                              Local variables are only recognized inside their functions, which means variables with the same name can 
+                              be used in different functions. 
+                              <br>
+                              The variables are created when a function starts and then deleted when the function is completed.
+                              <br><br>
+                              Variables declared outside a function are defined as Global.
+                              <br>
+                              A global  variable has a global scope, which means all scripts and functions on a web page can access it.
+                              <br>
+                              Note: if you assign a value to variable that has not been declared, it will automatically become a Global variabel.
+                              <br><br>
+                              Example
+                              <pre><code>
+                                //This is a global variable which can be accessed from everywhere.
+                                const myGlobal = "global";
+
+                                //code here can not access the local variables declared in the myFunc() function.
+                                //code here can on the other hand access var3 as it has been made Global automatically.
+                                
+                                function myFunc(){
+                                  //these are Local Variables and can only be used inside this function
+                                  const var1 = "x";
+                                  const var2 = "y";
+                                  //this variable has not been declared and is therefore automatically a Global varible.
+                                  var3 = "q";
+
+                                }
+                              </code></pre>
+                              <p style="font-weight: bold">Strict Mode</p>
+                              Browsers that support it can run JavaScript in "Strict Mode".
+                              <br>
+                              In Strict Mode, undeclared variables are NOT automatically global. 
+                              So in the example above var3 would not automatically be global.
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="card">
+                        <div class="card-header" id="headingSeven">
+                          <h2 class="mb-0">
+                            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                              URL Anatomy
+                            </button>
+                          </h2>
+                        </div>
+                        <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionExample">
+                          <div class="card-body">
+                            <p style="font-weight: bold">URL Anatomy</p>
+                            <table class="table table-striped table-dark">
+                              <thead>
+                                <tr>
+                                  <th scope="col">URL</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <th scope="row"><strong style="color: red;">https://</strong><strong style="color: orange;">www.</strong><strong style="color: brown;">example</strong><strong style="color: green;">.com</strong><strong style="color: teal;">:8080</strong><strong style="color: purple;">/path/</strong><strong style="color: royalblue;">?id=123</strong><strong style="color: fuchsia;">#section-id</strong></th>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <table class="table table-striped table-dark">
+                              <thead>
+                                <tr>
+                                  <th scope="col">Key</th>
+                                  <th scope="col">Function</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <th scope="row" style="color: red;">Protocol</th>
+                                  <td>Declares how your werb brower should communicate with the web server.</td>
+                                </tr>
+
+                                <tr>
+                                  <th scope="row" style="color: orange;">Subdomain</th>
+                                  <td>A sub-division of the main domain name. Ex. blog.google.com is a sub-domain of google.com</td>
+                                </tr>
+                                
+                                <tr>
+                                  <th scope="row" style="color: brown;">Domain</th>
+                                  <td>Unique reference that identifies a website on the internet.</td>
+                                </tr>
+                                
+                                <tr>
+                                  <th scope="row" style="color: green;">Top-level Domain</th>
+                                  <td>Always included in the domain name Ex. .com .org .dk etc.</td>
+                                </tr>
+                                
+                                <tr>
+                                  <th scope="row" style="color: teal;">Port</th>
+                                  <td>Determines what port to establish connection to, rarely visible in the URL but always required. 
+                                   <br> HTTP uses port 80 and HTTPS (secure) uses port 443.</td>
+                                </tr>
+                                
+                                <tr>
+                                  <th scope="row" style="color: purple;">Path</th>
+                                  <td>The path refers to a file or directory on the website e.g. /directory/file.php<td>
+                                </tr>
+                                
+                                <tr>
+                                  <th scope="row" style="color: royalblue;">Query String</th>
+                                  <td>Usually found in dynamic pages (generated from a database or user generated), represented
+                                    by a question mark followed by one or more parameters seperated by an ampersand (&) character.
+                                    Ex. <i>?q=asdfad&ie=utf-8&aq=t</i>
+                                  </td>
+                                </tr>
+                                
+                                <tr>
+                                  <th scope="row" style="color: fuchsia;">Fragment Identifier</th>
+                                  <td>An internal page reference, begins with a hash (#) character followed by an identifier.
+                                    It refers to a section within a web page.
+                                  </td>
+                                </tr>
+                                 
+                                </tr>
+                              </tbody>
+                            </table>
+
+                          </div>
+                        </div>
+                      </div>
+    
+                </div>
+    
+            </div>
+    
+        </div>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+</body>
+</html>

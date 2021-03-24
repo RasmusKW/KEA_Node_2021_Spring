@@ -1,0 +1,14 @@
+What HTTP methods and in what order?
+
+GET
+/plants - retrieves the list of plants
+/plants/id - retrieves plan with the provided id
+
+POST
+/plants - create a new plant entry
+
+PATCH
+/plants/id - Updates the plant entry with the given id
+
+DELETE
+/plants/id - deletes the plant entry with the given id

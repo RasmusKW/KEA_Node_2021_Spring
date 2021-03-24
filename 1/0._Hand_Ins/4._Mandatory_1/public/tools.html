@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <div class="indexjumbotron">
+        <div class="movedown">
+            <div class="container">
+              
+              <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-item nav-link" href="/">Home</a>
+                        <a class="nav-item nav-link" href="/terminal">Terminal Commands</a>
+                        <a class="nav-item nav-link active" href="/tools">Tools</a>
+                        <a class="nav-item nav-link" href="/theory">Theory</a>
+                    </div>
+                </div>
+            </nav>
+            
+    
+    
+                <div class="jumbotron">
+                    <h3>Tools</h3>
+                    <div class="accordion" id="accordionExample">
+                        <div class="card">
+                          <div class="card-header" id="headingOne">
+                            <h2 class="mb-0">
+                              <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Node.js
+                              </button>
+                            </h2>
+                          </div>
+                      
+                          <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                            <div class="card-body">
+                            <a href="https://nodejs.org/en/" target="_blank">Node.js</a> is an open-source server environment that takes use of JavaScript and is able to run on multiple platforms (Windows, Linux, Mac OS X etc.).
+                            <br><br>
+                            Node.js allows for generation of dynamic page content, CRUD operations on files on the server and in the database and collect form data.
+                            <br>
+                            A Node.js file can contain tasks that will executed on certain events, typically someone trying to access a port on the server. It must be initiated on the server before having any effect.
+                            <br><br>
+                            To see how to run Node.js files, see the Terminal Command page.
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="card">
+                          <div class="card-header" id="headingTwo">
+                            <h2 class="mb-0">
+                              <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Nodemon
+                              </button>
+                            </h2>
+                          </div>
+                          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                            <div class="card-body">
+                               <a href="https://www.npmjs.com/package/nodemon">Nodemon</a> is a tool that is used to automatically restart node applications everytime a file changes in the directory are detected.
+                                It helps the developer with faster implementation.
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="card">
+                          <div class="card-header" id="headingThree">
+                            <h2 class="mb-0">
+                              <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Express
+                              </button>
+                            </h2>
+                          </div>
+                          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <a href="https://expressjs.com/" target="_blank">Express</a> is a free, open source minimal and flexible Node.js back end web application framework
+                                that is used to build web application and APIs. 
+                                <br><br>
+                                For the applications we made we took use of Express' Routing, which refers to how an application's endpoints respond to client requests.
+                                The routing methods corresponds to the HTTP request methods. For example <code>app.get()</code> is used to handle GET requests and <code>app.post()</code>
+                                is used to handle POST requests.
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header" id="headingFour">
+                              <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                  NPM
+                                </button>
+                              </h2>
+                            </div>
+                            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                              <div class="card-body">
+                                <a href="https://expressjs.com/" target="_blank">NPM</a> (Node Package Manager) is a Software Library which works as a Package Manager and Installer.
+                                It also includes a CLI (Command Line Client) which can be used to install software.
+                                <br><br>
+                                To see how NPM commands work in practice, see the Terminal Commands section.
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+    
+                </div>
+    
+            </div>
+    
+        </div>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+</body>
+</html>

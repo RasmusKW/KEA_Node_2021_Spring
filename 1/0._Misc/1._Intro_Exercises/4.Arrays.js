@@ -25,7 +25,7 @@ const significantMathNumbers = [0, 2.718, 3.14159, 1729];
 
 // You want to programmatically find where the number 1729 is in the array.
 // programmatically means that no finger counting allowed. There is a method for this (finding index based of value). 
-console.log("Ex 3: " + significantMathNumbers.indexOf(1729));
+console.log(significantMathNumbers.indexOf(1729));
 
 // --------------------------------------
 // Exercise 4 - Inserting elements
@@ -39,7 +39,7 @@ diet.splice(2,0, "hamburger", "soda", "pizza");
 console.log("Ex 4: " + diet);
 // --------------------------------------
 // Exercise 5 - Remove element
-diet.splice(-1,1)
+diet.pop();
 console.log("Ex 5: " + diet);
 // Remove the LAST element of the array.
 // Don't remove by index. You know in advance that it's the last in the array because you are too full already. 
@@ -64,8 +64,8 @@ const lettersExpanded = ["a","b","c", "d", "e", "f", "g", "h"];
 
 // log every second char in the array starting from b
 
-for (let index = 1; index < lettersExpanded.length; index+=2) {
-    console.log(lettersExpanded[index]);
+for (let i = 1; i < lettersExpanded.length; i+=2) {
+    console.log(lettersExpanded[i]);
     
 }
 
@@ -74,18 +74,17 @@ for (let index = 1; index < lettersExpanded.length; index+=2) {
 
 const numbers  = [5, 3, 2, 7, 11, 12, 0, -20, 6];
 const discardedNumbers = [];
-numbers.forEach(function(number){
-    if(number > 6){
-        console.log(numbers[number]);
+
+for (let i = 0; i<numbers.length; i++) {
+    if ( numbers[i]>6 || numbers[i]<0 )
+        console.log(numbers[i]);
+    else {
+        discardedNumbers.push(numbers[i])
     }
-    else(
-        discardedNumbers.push(number)
-    )
 
-});
+}
 
-
-
+console.log(discardedNumbers);
 // log the element if the number is above 6 or below 0
 // else push them to the array discardedNumbers
 
