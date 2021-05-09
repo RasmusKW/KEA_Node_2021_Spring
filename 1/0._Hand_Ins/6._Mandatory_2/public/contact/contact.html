@@ -1,0 +1,41 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="/frontpage/frontpage.css">
+    <title>Frontpage</title>
+
+</head>
+
+<body>
+
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <div id="contact-info">
+                <h1>Contact me here</h1>
+            </div>
+            
+            <div class="form-container">
+                <form action=""></form>
+            </div>
+
+            <form method="POST" action="/api/contact">
+                <label>Email</label>
+                <input type="email" name="email" placeholder="Email"><br>
+
+                <label>Subject</label>
+                <input type="subject" name="subject" placeholder="Subject"><br>
+
+                <label>Message</label><br>
+                <textarea type="text" name="message" placeholder="Message" rows="20" cols="50"></textarea>
+            
+                <button type="submit">Contact Me</button>
+            </form>
+        </div>
+    </div>
+    <script src="/routes/contact.js"></script>
+</body>
+</html>
+

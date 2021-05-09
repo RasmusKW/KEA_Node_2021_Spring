@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Prices</title>
+</head>
+<body>
+    <h4>Real-Time Crypto Currency</h4>
+    <div>
+        <h5>Bitcoin</h5>
+        <button>Get Bitcoin Price</button>
+        <p id="btc"></p>
+    </div>
+    <div>
+        <h5>Ethereum</h5>
+        <p id="eth"></p>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <script>
+        /*
+        $(function() { })
+        $.get("https://api.coinlore.net/api/ticker/?id=90", (data) =>{
+            console.log("BTC", data);
+            const btcPrg = document.getElementById("btc");
+            btcPrg.innerText = "The Current Price of 1 Bitcoin is: $" + data[0].price_usd;
+        })
+
+        $.get("https://api.coinlore.net/api/ticker/?id=80", (data) =>{
+            console.log("ETH", data);
+            const ethPrg = document.getElementById("eth");
+            ethPrg.innerText = "The Current Price of 1 Ethereum is: $" + data[0].price_usd;
+        })
+        */
+
+        /*
+        fetch("https://api.coinlore.net/api/ticker/?id=90")
+        .then(response => response.json())
+        .then(result => $("#btc").text("$" + result[0].price_usd));
+        
+        fetch("https://api.coinlore.net/api/ticker/?id=80")
+        .then(response => response.json())
+        .then(result => $("#eth").text("$" + result[0].price_usd));
+        */
+        //OR
+        
+        fetch("https://api.coinlore.net/api/ticker/?id=90")
+        .then(response => response.json())
+        .then(result => {const btcPrg = document.getElementById("btc");
+            btcPrg.innerText = "The Current Price of 1 Bitcoin is: $" + result[0].price_usd});
+        
+        fetch("https://api.coinlore.net/api/ticker/?id=80")
+        .then(response => response.json())
+        .then(result => {const ethPrg = document.getElementById("eth");
+            ethPrg.innerText = "The Current Price of 1 Ethereum is: $" + result[0].price_usd;});
+           
+        /*
+        (async function(){
+            const res = await fetch("https://api.coinlore.net/api/ticker/?id=80");
+            const eth
+        })()
+            */
+    </script>
+</body>
+</html>
