@@ -4,38 +4,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="/frontpage/frontpage.css">
-    <title>Frontpage</title>
+    <link rel="stylesheet" href="/contact/contact.css">
+    <title>Contact</title>
 
 </head>
 
 <body>
 
     <div class="jumbotron jumbotron-fluid">
-        <div class="container">
-            <div id="contact-info">
-                <h1>Contact me here</h1>
-            </div>
+    <div class="container">
             
-            <div class="form-container">
-                <form action=""></form>
-            </div>
+        <h1>Contact me here</h1>
+           
+        <form method="POST" action="/api/contact">
 
-            <form method="POST" action="/api/contact">
-                <label>Email</label>
-                <input type="email" name="email" placeholder="Email"><br>
+            <label>Email</label><br>
+            <input type="email" name="email" placeholder="Email" required><br><br>
 
-                <label>Subject</label>
-                <input type="subject" name="subject" placeholder="Subject"><br>
+            <label>Subject</label><br>
+            <input type="subject" name="subject" placeholder="Subject" required><br><br>
 
-                <label>Message</label><br>
-                <textarea type="text" name="message" placeholder="Message" rows="20" cols="50"></textarea>
-            
-                <button type="submit">Contact Me</button>
+            <label>Message</label><br>
+            <textarea type="text" name="message" placeholder="Message" rows="20" cols="50" required></textarea>
+            <br><br>
+
+            <button type="submit" class="btn btn-primary">Contact Me</button>
             </form>
-        </div>
     </div>
+    </div>
+   
     <script src="/routes/contact.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 </body>
 </html>
 

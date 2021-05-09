@@ -11,12 +11,9 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 
 const transport = nodemailer.createTransport({
-
-  host: "smtp-mail.outlook.com",
-  port: 587,
-  secure: true, // use TLS
+    service: "gmail",
     auth: {
-        user: 'nodefolio@outlook.com',
+        user: 'businessnoneofyour65@gmail.com',
         pass: 'mytestpass!'
     },
     tls: {
@@ -28,20 +25,21 @@ const transport = nodemailer.createTransport({
 function sendMail(mail){
     var mailOptions ={
         from: mail.email,
-        to: 'nodefolio@outlook.com',
+        to: 'businessnoneofyour65@gmail.com',
         subject: mail.subject,
         html: mail.message
-    }
+}
 
-    transport.sendMail(mailOptions, function(err,info) {
-        if(err){
+transport.sendMail(mailOptions, function(err,info) {
+    if(err){
             console.log(err);
-        }
-        else{
+    }
+    else{
             console.log("Email sent"+ info.reponse);
         }
     })
 }
+
 router.post("/api/contact", (req, res) => {
     mail = {
         email: req.body.email,
@@ -49,7 +47,7 @@ router.post("/api/contact", (req, res) => {
         message: req.body.message
     }
     sendMail(mail);
-    res.redirect("/");
+    res.redirect("/email");
 });
 
 module.exports = {

@@ -1,13 +1,8 @@
 const express = require("express");
 const app = express();
-const nodemailer = require("nodemailer");
-const bodyParser = require("body-parser");
-
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({extended: true}));
 
 app.use(express.static("public"));
 
@@ -25,6 +20,7 @@ const footer = fs.readFileSync(__dirname + "/public/footer/footer.html", "utf-8"
 const frontpage = fs.readFileSync(__dirname + "/public/frontpage/frontpage.html", "utf-8");
 const projects = fs.readFileSync(__dirname + "/public/projects/projects.html", "utf-8");
 const contact = fs.readFileSync(__dirname + "/public/contact/contact.html", "utf-8");
+const email = fs.readFileSync(__dirname + "/public/contact/email.html", "utf-8");
 
 app.get("/", (req, res) => {
     res.send(nav + frontpage + footer);
@@ -36,6 +32,11 @@ app.get("/projects", (req, res) => {
 
 app.get("/contact", (req, res) => {
     res.send(nav + contact + footer);
+});
+
+
+app.get("/email", (req, res) => {
+    res.send(email + footer);
 });
 
 const server = app.listen(process.env.PORT || 8080, (error) => {

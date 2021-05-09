@@ -1,0 +1,9 @@
+.jumbotron{
+    background: rgb(36, 36, 36);
+    color: #f1f1f1;
+}
+
+body{
+    background: rgb(39,39,39);
+    font-family:'Courier New', Courier, monospace;
+}
